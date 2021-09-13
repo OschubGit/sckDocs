@@ -2,9 +2,9 @@
 home: true
 heroImage: /img/logoDoc.png
 heroText: Scenikus Documentación
-tagline: Documentación proyecto watch.scenikus.com
+tagline: Documentación proyectos Scenikus
 actionText: Empezar →
-actionLink: /guia/
+actionLink: /guia/scenikus-guia
 features:
 - title: Actualizaciones
   details: Minimal setup with markdown-centered project structure helps you focus on writing.

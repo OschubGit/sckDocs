@@ -1,9 +1,10 @@
 # Estructura SCSS
 
-Aqui puedes encontrar los estilos actuales del proyecto watch.scenikus.com
+
 
 ## Organización de contenido SCSS
-El proyecto usa reglas de estilos SCSS, por tanto podemos encontrar diferentes carpetas.
+El proyecto usa reglas de estilos SCSS, por tanto podemos encontrar diferentes carpetas que los organizan.
+
 ```js
 sass/
 |
@@ -34,14 +35,14 @@ sass/
 |   |– _theme.sass        // Default theme
 |
 |– vendors/
-|   |– _materialui.sass    // Bootstrap
+|   |– _materialui.sass    // Material Ui
 |   |– _jquery-ui.sass    // jQuery UI
 |
 |– main.sass              // Archivo principal
 ```
 
 ## Importación
-Finalmente, el archivo main.sass , importa todos los archivos de cada carpeta. Cambios.
+En el archivo main.sass, importamps todos los archivos de cada carpeta.
 
 ```js
 @import 'utilities/variables';
@@ -67,4 +68,11 @@ Finalmente, el archivo main.sass , importa todos los archivos de cada carpeta. C
 
 @import 'themes/theme';
 
+```
+
+## Vinculación de estilos
+Finalmente, el archivo main.sass, se vincula al componente que engloba la app.
+
+```js
+import "./app/assets/sass/main.scss";
 ```
