@@ -1,4 +1,6 @@
-## Versiones Logotipo
+## Manual de estilos
+
+### Versiones logotipo
 
 Aqui dispones de toda la información referente a los estilos del proyecto.
 
