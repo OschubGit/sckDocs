@@ -1,4 +1,4 @@
-## Manual de estilos
+## Versiones Logotipo
 
 Aqui dispones de toda la información referente a los estilos del proyecto.
 
@@ -7,7 +7,6 @@ En primer lugar puedes descargar los logos de SCENIKUS en los siguientes enlaces
 #### Descárgalo en el formato que desees: :metal:
 
 Click [aquí](https://drive.google.com/drive/folders/182cdJhSyrS5_8kXEUUVIAeZscv1sHADf?usp=sharing) para descargar en cualquier formato.
-
 
 ## Paleta de colores
 
@@ -30,8 +29,11 @@ $primary-light: #23d3d9;
 $primary-dark: #106366;
 ```
 
-### Palette secondary colors
+::: tip
+<img src="/img/primarycolor.png">
+:::
 
+### Palette secondary colors
 
 ```scss
 $secondary-color: #d12465;
@@ -39,10 +41,13 @@ $secondary-light: #ff2b7c;
 $secondary-dark: #661132;
 ```
 
+::: tip
+<img src="/img/secondarycolor.png">
+:::
 
 ### Backgrounds
 
-Estos los usaremos para definir los fondos de la página. El principal es <code>$default-background:</code>, pero asignamos más para dar vivacidad a la aplicación.
+Estos los usaremos para definir los fondos de la página. El principal es <code>\$default-background:</code>, pero asignamos más para dar vivacidad a la aplicación.
 
 ```scss
 $default-background: #06070d;
@@ -51,6 +56,9 @@ $background-dark: #171c33;
 $background-alternative: #071f2c;
 ```
 
+::: tip
+<img src="/img/backgroundscolor.png">
+:::
 
 ### Pallete grey colors
 
@@ -73,7 +81,6 @@ $shaft-opty: #303030;
 $dove-opty: #616161;
 ```
 
-
 ## Font Family
 
 El nuevo proyecto de Scenikus usa Roboto. Esta tipografía es la que viene por defecto al instalar Material Ui.
@@ -81,27 +88,33 @@ El nuevo proyecto de Scenikus usa Roboto. Esta tipografía es la que viene por d
 ### Importación
 
 Usamos Roboto como tipografía por defecto. Podemos agregar más añadiendo el link en el <code>head</code> del archivo <code>index.html</code>
+
 ```html
-<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto"
+  rel="stylesheet"
+  type="text/css"
+/>
 ```
 
 ### Uso Css
 
-También podemos importar las tipografías en la hoja de estilos. Usaremos variables para importar las tipografías y usarlas a nivel global. Encontramos la carpeta en <code>SCSS > utilities > _variables.scss</code>
+También podemos importar las tipografías en la hoja de estilos. Usaremos variables para importar las tipografías y usarlas a nivel global. Encontramos la carpeta en <code>SCSS > utilities > \_variables.scss</code>
 
 ```scss
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap");
 
-$font-title: 'Roboto', sans-serif;
-$font-text: 'Open Sans', sans-serif;
+$font-title: "Roboto", sans-serif;
+$font-text: "Open Sans", sans-serif;
 ```
+
 Luego podremos llamar estas variables en los archivos Scss:
 
 ```scss
 font-family: $font-title;
 ```
 
-Material Ui ya proporciona la tipografía Roboto por defecto. 
+Material Ui ya proporciona la tipografía Roboto por defecto.
 
 ### Pairings tipográfico
 
@@ -109,21 +122,26 @@ Material Ui ya proporciona la tipografía Roboto por defecto.
 <img src="/img/pairing.png">
 :::
 
-
 ### Color para tipografías
 
-También podemos especificar colores para las tipografías. Usamos colores de contraste en las tipografías para resaltarlas del fondo <code>$primary-background</code>
+También podemos especificar colores para las tipografías. Usamos colores de contraste en las tipografías para resaltarlas del fondo <code>\$primary-background</code>
 
 ```scss
-$light: #fff;
-$medium: #dadada;
+$text-light: #fff;
+$text-medium: #dadada;
+$text-dark: #0e0e0e;
 $contrastTextv1: #253746;
 $contrastTextv2: #192735;
-$contrastTextv3: #06070D;
 ```
+
+::: tip
+<img src="/img/textcolors.png">
+:::
+
 ### Font size
 
 ::: details Material Ui especifica los siguientes tamaños tipográficos. Click para ver.
+
 ```js
 typography: Object
     htmlFontSize: 16
@@ -204,10 +222,10 @@ typography: Object
         lineHeight: 1.66
         letterSpacing: "0.03333em"
 ```
+
 :::
 
 Podemos verlo en la [documentación oficial](https://material-ui.com/customization/default-theme/). También podemos consultar [Typography Material Ui](https://material-ui.com/components/typography/#typography)
-
 
 ## Espaciados
 
@@ -216,7 +234,6 @@ Usamos una base de 16px para el espaciado. Es lo que tiene el cuerpo de texto po
 ::: tip
 <img src="/img/espaciado-guide.png">
 :::
-
 
 ```scss
 $space: 4px; (16 x 0,25)
@@ -245,17 +262,81 @@ Podemos conseguir este componente en [Buttons Material Ui](https://material-ui.c
 
 Aqui veremos los diferentes tipos de botones con sus variables en diferentes estados.
 
-<img src="/img/buttons/Boton-sobre-blanco.png">
+### Contained
 
+<img src="/img/buttons/contained-sobre-blanco.jpg">
+<img src="/img/buttons/contained-sobre-negro.jpg">
 
-<img src="/img/buttons/Hover-sobre-blanco.png">
+#### Hover
 
+<img src="/img/buttons/contained-Hover-sobre-blanco.jpg">
+<img src="/img/buttons/contained-Hover-sobre-negro.jpg">
 
-<img src="/img/buttons/Boton-sobre-negro.png">
+```scss
+/* Usaremos estos colores para el background del hover */
+Primary: primary-dark: #106366;
+Secondary: secondary-dark: #661132;
+```
 
+```jsx
+<Button variant="contained">Default</Button>
+<Button variant="contained" color="primary">
+  Primary
+</Button>
+<Button variant="contained" color="secondary">
+  Secondary
+</Button>
+<Button variant="contained" disabled>
+  Disabled
+</Button>
+<Button variant="contained" color="primary" href="#contained-buttons">
+  Link
+</Button>
+```
 
-<img src="/img/buttons/Hover-sobre-negro.png">
+### Border
 
+<img src="/img/buttons/borde-sobre-blanco.png">
+<img src="/img/buttons/borde-sobre-negro.png">
+
+#### Hover
+
+<img src="/img/buttons/borde-hover-sobre-blanco.png">
+<img src="/img/buttons/borde-hover-sobre-negro.png">
+
+```scss
+/* Usaremos estos colores para el background del hover */
+Primary: primary-dark: #106366 opacity 30%;
+Secondary: secondary-dark: #661132 opacity; 30%;
+```
+
+```jsx
+<Button variant="outlined">Default</Button>
+<Button variant="outlined" color="primary">
+  Primary
+</Button>
+```
+
+### Default
+
+<img src="/img/buttons/text-sobre-blanco.jpg">
+<img src="/img/buttons/text-sobre-negro.jpg">
+
+#### Hover
+
+<img src="/img/buttons/text-Hover-sobre-blanco.jpg">
+<img src="/img/buttons/text-Hover-sobre-negro.jpg">
+
+```scss
+/* Usaremos estos colores para el background del hover */
+Primary: primary-dark: #106366 opacity 30%;
+Secondary: secondary-dark: #661132 opacity 30%;
+```
+
+```jsx
+<Button color="secondary">Secondary</Button>
+<Button disabled>Disabled</Button>
+```
 
 ## Iconografía
 

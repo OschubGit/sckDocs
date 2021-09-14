@@ -6,11 +6,11 @@ tagline: Documentación proyectos Scenikus
 actionText: Empezar →
 actionLink: /guia/scenikus-guia
 features:
-- title: Actualizaciones
-  details: Minimal setup with markdown-centered project structure helps you focus on writing.
-- title: Vue-Powered
-  details: Enjoy the dev experience of Vue + webpack, use Vue components in markdown, and develop custom themes with Vue.
-- title: Performant
-  details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
+  - title: Actualizaciones
+    details: Se agregarán al manual las últimas actualizaciones de estilos o componentes.
+  - title: Documentación
+    details: Expliacciones de la estructura y organización de Scenikus para tener el control de la aplicación.
+  - title: Creado con Vuepress
+    details: Creado con Vuepress. Si se desea modificar el contenido se tendrá que clonar el repositorio y subir los camnbios.
 footer: Scenikus Documentation | 2021 Todos los derechos reservados®
 ---
